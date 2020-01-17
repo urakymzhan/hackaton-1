@@ -280,9 +280,14 @@ input {
 }
 .flag3 {
     background-color: #9B59B6;
+    color: #fff;
+    padding: 1.25rem 0.8rem;
 }
 .flag3-2 {
     background-color: #E67E22;
+    text-align: left;
+    padding: 1.25rem 0.8rem;
+    color: #fff;
 }
 
 .section3-content {
@@ -293,8 +298,60 @@ input {
     border-radius: 3px;
     background-color: #fff;
     position: relative;
+    padding: 0 5%;
 }
 
+ul {
+    cursor: pointer;
+}
+
+.section3-flag-nav {
+    list-style: none;
+    margin: 0;
+
+}
+.section3-flag-nav li {
+    display: inline-block;
+    margin-left: 1rem;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+.section3-flag-nav li:hover {
+    background-color: rgba(255,255,255, 0.3);
+}
+.fa-pen, .fa-times {
+    font-size: .875rem;
+    vertical-align: middle;
+}
+table {
+    border-collapse:separate; 
+    border-spacing: 0;
+    text-align: left;
+}
+tr {
+    /* padding-bottom: 8rem; */
+}
+tr td {
+    padding: 0.8rem 0 2rem 0;
+    font-size: .875rem;
+    vertical-align: middle;
+    border-top: 1px solid rgba(0,0,0,.06);
+}
+
+thead {
+    /* display: table-header-group; */
+    /* box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12); */
+    color: orange;
+    padding: 0;
+    margin: 0;
+}
+thead tr th {
+    padding: 0.8rem 0 2rem 0;
+    /* font-size: .875rem; */
+    vertical-align: middle;
+    /* border-top: 1px solid rgba(0,0,0,.06); */
+    /* border-bottom: 2px solid rgba(0,0,0,.06); */
+}
 
 /*  Footer --------------- */
 
@@ -318,8 +375,4 @@ footer ul li:last-child {
     float: right;
 }
 
-
-ul {
-    cursor: pointer;
-}
 
