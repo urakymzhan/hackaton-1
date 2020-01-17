@@ -1,6 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
 }
  /* everything */
 * {
@@ -17,6 +18,12 @@ html, body {
     }
   }
 
+button {
+    text-decoration: none;
+}
+input {
+    outline: none;
+}
 
 .sidebar {
     width: 20%;    
@@ -59,7 +66,7 @@ h1 {
 }
 .sidebar-list li:hover {
     background-color: #19CDAD;
-    /* transform: scaleY(2); */
+    /* transform: scaleY(1.5); */
  }
  .sidebar-list li i {
      margin-right: 10px;
@@ -87,7 +94,6 @@ h1 {
 .layout::-webkit-scrollbar {
     display: none; 
 }
-
 
 .navbar-list {
     list-style: none;
@@ -125,21 +131,18 @@ input {
 
 .section1 {
     height: 200px;
-    /* border: 1px solid red; */
     padding: 0; 
     margin-bottom: 2rem;
 }
 
 .section2 {
     height: 400px;
-    /* border: 1px solid green; */
     margin-bottom: 2rem;
 }
 
 .section3 {
-    height: 600px;
+    height: 500px;
     margin-bottom: 2rem;
-    /* border: 1px solid blue; */
 }
 
 
@@ -183,15 +186,17 @@ input {
     background-color: #fff;
     border-radius: 3px;
     display: inline-block;
+    box-shadow: 1px 1px 1px 1px lightgray;
+    margin-left: 1.25rem;
 }
 
-.first-section1-content {
-    margin-left: 0;
-}
-
-/* .last-section1-content {
-    margin-right: 0;
+/* .first-section1-content {
+    margin-left: 1rem;
 } */
+
+.last-section1-content {
+    /* margin-right: 0; */
+}
 
 /* i can do this with flex but class doesn't know flex yet */
 .subsection1, .subsection2, .subsection3, .subsection4  {
@@ -201,6 +206,7 @@ input {
     padding: 25px 0; /* 200px - 150px / 2 */
     display: inline-block;
     margin: 0;
+    /* text-align: center; */
 }
 
 
@@ -228,13 +234,22 @@ input {
     display: inline-block;
 }
 .flag2 {
-    background-color: #27AE60;
+    /* background-color: #27AE60; */
+    border: 10px solid #27AE60;
+    background-image: url('./assets/chart1.png');
+    background-size: cover;
 }
 .flag2-2 {
     background-color: #E67E22;
+    border: 10px solid #E67E22;
+    background-image: url('./assets/email.png');
+    background-size: cover;
 }
 .flag2-3 {
     background-color: #C0392B;  
+    border: 10px solid #C0392B;
+    background-image: url('./assets/tasks.jpg');
+    background-size: cover;
 }
 
 .section2-content {
@@ -245,6 +260,7 @@ input {
     border-radius: 3px;
     background-color: #fff;
     position: relative;
+    box-shadow: 1px 1px 1px 1px lightgray;
 }
 
 /* Section 3 --------------- */
@@ -256,7 +272,7 @@ input {
     display: inline-block;
     margin: 0;
     /* height: 100%; */
-    padding: 40px 0; /* 600px - 520px / 2 */
+    padding: 50px 0; /* 500px - 400px / 2 */
     text-align:center;
 }
 .subsection3-1 {
@@ -292,13 +308,14 @@ input {
 
 .section3-content {
     width: 96%;
-    height: 520px;
+    height: 400px;
     display: inline-block;
     border: none;
     border-radius: 3px;
     background-color: #fff;
     position: relative;
     padding: 0 5%;
+    box-shadow: 1px 1px 1px 1px lightgray;
 }
 
 ul {
@@ -328,27 +345,29 @@ table {
     border-spacing: 0;
     text-align: left;
 }
-tr {
-    /* padding-bottom: 8rem; */
-}
-tr td {
+.subsection3-1 tr td {
     padding: 0.8rem 0 2rem 0;
     font-size: .875rem;
     vertical-align: middle;
     border-top: 1px solid rgba(0,0,0,.06);
 }
+.subsection3-2 tr td {
+    padding: 0.8rem 0 0.6rem 0;
+    font-size: .875rem;
+    vertical-align: middle;
+    border-top: 1px solid rgba(0,0,0,.06);
+}
 
-thead {
-    /* display: table-header-group; */
-    /* box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12); */
+.subsection3-2 thead {
     color: orange;
     padding: 0;
     margin: 0;
 }
 thead tr th {
-    padding: 0.8rem 0 2rem 0;
-    /* font-size: .875rem; */
+    padding: 0.8rem 0 0.6rem 0;
+    font-size: 14px;
     vertical-align: middle;
+    text-shadow: 0.2px 0 1px rgb(230, 126, 34,0.8);
     /* border-top: 1px solid rgba(0,0,0,.06); */
     /* border-bottom: 2px solid rgba(0,0,0,.06); */
 }
