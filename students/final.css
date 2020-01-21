@@ -1,0 +1,103 @@
+/* ---------- Added my own style for sidebar and overall content body ---------- */
+
+   /* Variables */
+:root {
+    --white: #fff;
+    --black: #000;
+    --orange: #E67E22;
+    --green: #27AE60;
+    --red: #C0392B;
+    --blue: #1ABC9C;
+    --darkgray: #797D7F;
+    --lightgray: #E5E7E9;
+    --purple: #9B59B6;
+    --normalFont: 14px;
+    --bigFont: 26px;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+}
+
+ /* Everything */
+* {
+    box-sizing: border-box;
+}
+
+
+/* Common sidebar and content */
+.layout {
+    vertical-align: top;
+    top: 0;
+    bottom: 0;
+    min-height: 100vh;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: none;  /*  IE 10+ */
+    overflow: -moz-scrollbars-none; /*  Firefox */
+}
+ /* remove scrollbar style for Safari and Chrome */
+.layout::-webkit-scrollbar {
+    display: none; 
+}
+
+/*  ---------- SIDEBAR ------------ */
+.sidebar {
+    width: 20%;    
+    left: 0;
+    float: left;
+    position: fixed;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 1rem;
+    box-shadow: 2px 0 5px var(--black);
+}
+/* Sidebar background image */
+.sidebar::before {
+    content: "";
+    background-image: url('../assets/sidebar-bg-image.jpeg');
+    background-size: cover;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; 
+}
+.sidebar h1 {
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+.sidebar-list-wrapper {
+    list-style: none;
+    border-top: 1px solid var(--sidebarColor);
+    padding: 1rem 0;
+}
+.sidebar-list-wrapper li {
+    padding: 1rem 0 1rem 2rem;
+    margin: 1rem 0;
+    font-size: var(--normalFont);
+}
+.sidebar-list-wrapper li:hover {
+    background-color: var(--green);
+    /* transform: scaleY(1.5); */
+ }
+.sidebar-list-wrapper li i {
+     margin-right: 10px;
+ }
+
+/* Content */
+ .content {
+    margin-left: 20%;
+    right: 0;
+    padding: 1rem;
+    background-color: var(--lightgray);
+    color: var(--darkgray);
+}

@@ -1,0 +1,98 @@
+
+/* ---------- Modified a little bit ---------- */
+
+.section4 {
+    position: relative;
+    height: 500px;
+    font-size: 14px;
+}
+
+.left, .right {
+    background: white;
+    color: rgb(148, 149, 151);
+    border-radius: 5px;
+    display: inline-block;
+    height: 400px;
+    width: 500px;
+    margin-top: 50px;  /* 500 - 400 / 2 */
+    vertical-align: top;
+    padding: 35px 40px 5px 40px; /*margin-top = 80 - 50 = 30px + 5px = 35px, margin-left and right = 500 - 420 / 2 */
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+#purple, #orange {
+    color: white;
+    border-radius: 5px;
+    height: 80px;
+    width: 420px;
+    position: absolute;
+    display: inline-block;
+    vertical-align: top;
+    z-index: 9999;
+}
+
+#purple  {
+    background: #9B59B6;
+    left: 40px;   /* 500 - 420 / 2 */
+}
+
+#orange {
+    background: rgb(243, 154, 72);
+    right: 40px;  /* 500 - 420 / 2 */
+    padding: 16px;
+}
+
+
+
+/* Table  make sure it doesn't break others tables */
+
+.section4 table {
+    border-collapse: collapse; 
+    border-spacing: 0;
+    width: 100%;
+}
+.left th, .left td {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 5px;
+}
+
+.right th, .right td {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 5px;
+}
+
+.section4 tr:hover {
+  background-color: rgb(94, 111, 145, 0.2);
+}
+.right thead tr:first-child:hover {
+  background-color: white;
+}
+.section4 th {
+  color:  rgb(243, 154, 72);
+}
+
+
+.icon {
+    line-height: 80px;
+    padding-left: 40px;
+    border: 1px solid black;
+}
+.fa-bug, .fa-angle-left, .fa-cloud {
+    margin-left: 12px;
+}
+
+
+.orange-top {
+    font-size: 18px;
+}
+.orange-bottom {
+    opacity: 0.8;
+}
+  

@@ -1,0 +1,38 @@
+
+/* ---------- Modified a little bit ---------- */
+
+
+/* Navbar */
+#navbar {
+    margin: 0;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+#navbar-text {
+    float: left;
+}
+
+#navbar-input {
+    background-color: inherit;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+#navbar img {
+    margin-right: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: right;
+}
+
+.left-footer {
+    display: inline-block;
+    float: left;
+}
+.right-footer {
+    display: inline-block;
+}

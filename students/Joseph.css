@@ -1,0 +1,63 @@
+
+/* ---------- Modified a little bit ---------- */
+
+
+.container {
+    height: 300px;
+}
+
+.box1, .box2, .box3, .box4 {
+    width: 20%;
+    height: 200px;
+    display: inline-block;
+    background-color: white;
+    margin-top: 50px; /* 300 - 200 / 2*/
+    margin-left: 4% ;
+    margin-bottom: 20px;
+    position: relative;
+    vertical-align: top;
+    border-radius: 5px;
+}
+
+.container span {
+    position: absolute;
+}
+
+.top {
+    margin-top: 10px;
+    right: 10px;
+    font-size: 14px;
+}
+
+.middle {
+    margin-top: 20px;
+    right: 10px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+
+.bottom {
+    bottom: 7px;
+    left: 10px;
+    padding: 2px;
+    border-top: 1px solid gray;
+    width: 90%;
+    font-size: 14px;
+}
+
+.container img {
+    display: inline-block;
+    position: absolute;
+    width: 80px;
+    height: 110px;
+    border: none;
+    border-radius: 5px;
+    z-index: 9999;
+    margin-left: 4% ;
+}
+
+.container img:hover {
+    transform: rotateY(150deg);
+    transition: transform 1s;
+}
